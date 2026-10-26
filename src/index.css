@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-white font-sans text-stone-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-gold-200 text-stone-950;
+  }
+
+  /* Visible keyboard focus everywhere; mouse clicks stay clean. */
+  :focus-visible {
+    outline: 2px solid theme('colors.gold.500');
+    outline-offset: 2px;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-10;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex h-12 select-none items-center justify-center gap-2 whitespace-nowrap rounded-full px-6 text-sm font-semibold transition-all duration-200 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-stone-950 text-white hover:bg-stone-800;
+  }
+  .btn-gold {
+    @apply btn bg-gold-500 text-stone-950 hover:bg-gold-400;
+  }
+  .btn-outline {
+    @apply btn border border-stone-300 bg-white text-stone-900 hover:border-stone-950;
+  }
+  .btn-ghost {
+    @apply btn text-stone-700 hover:bg-stone-100 hover:text-stone-950;
+  }
+  .btn-light {
+    @apply btn bg-white text-stone-950 hover:bg-cream-100;
+  }
+  .btn-sm {
+    @apply h-10 px-4 text-[13px];
+  }
+  .btn-lg {
+    @apply h-14 px-8 text-[15px];
+  }
+  .icon-btn {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-full text-stone-700 transition-colors hover:bg-stone-100 hover:text-stone-950;
+  }
+
+  /* Forms */
+  .input {
+    @apply block h-12 w-full rounded-xl border border-stone-300 bg-white px-4 text-[15px] text-stone-900 transition placeholder:text-stone-400 focus:border-stone-950 focus:outline-none focus:ring-4 focus:ring-stone-950/5 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-500;
+  }
+  textarea.input {
+    @apply h-auto py-3 leading-relaxed;
+  }
+  select.input {
+    @apply appearance-none bg-no-repeat pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2378716c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-position: right 0.9rem center;
+  }
+  .input-error {
+    @apply border-rose-400 focus:border-rose-500 focus:ring-rose-500/10;
+  }
+  .label {
+    @apply mb-1.5 block text-[13px] font-semibold text-stone-700;
+  }
+  .field-error {
+    @apply mt-1.5 flex items-center gap-1.5 text-xs font-medium text-rose-600;
+  }
+  .field-hint {
+    @apply mt-1.5 text-xs text-stone-500;
+  }
+
+  /* Surfaces & labels */
+  .card {
+    @apply rounded-2xl border border-stone-200/80 bg-white;
+  }
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-500;
+  }
+  .chip {
+    @apply inline-flex h-9 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-stone-200 bg-white px-4 text-[13px] font-medium text-stone-700 transition-colors hover:border-stone-950 hover:text-stone-950;
+  }
+  .chip-active {
+    @apply border-stone-950 bg-stone-950 text-white hover:text-white;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 py-1 text-[11px] font-semibold leading-none;
+  }
+
+  /* Loading placeholder with a soft sweep */
+  .skeleton {
+    @apply relative overflow-hidden rounded-lg bg-stone-200/60 before:absolute before:inset-0 before:-translate-x-full before:animate-shimmer before:bg-gradient-to-r before:from-transparent before:via-white/70 before:to-transparent;
+  }
+
+  /* Animated underline for text links */
+  .link-underline {
+    @apply bg-gradient-to-r from-current to-current bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 hover:bg-[length:100%_1px];
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
