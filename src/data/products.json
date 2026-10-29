@@ -1,0 +1,323 @@
+[
+  {
+    "id": "1",
+    "name": "Full Sleeve Shirts",
+    "slug": "full-sleeve-shirts",
+    "description": "Collared, button-down tops made from various fabrics. Perfect for formal and semi-formal occasions.",
+    "price": 1999,
+    "originalPrice": 2799,
+    "image": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/1232594/pexels-photo-1232594.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "SHSH-KF"
+  },
+  {
+    "id": "2",
+    "name": "Full Sleeve T-Shirts",
+    "slug": "full-sleeve-t-shirts",
+    "description": "Comfortable full sleeve t-shirts perfect for casual wear. Made from premium cotton fabric.",
+    "price": 899,
+    "originalPrice": 1499,
+    "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "T-Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "TSFL-01"
+  },
+  {
+    "id": "3",
+    "name": "Classic Hoodies",
+    "slug": "classic-hoodies",
+    "description": "Warm and comfortable hoodies with premium quality fabric. Perfect for winter and casual outings.",
+    "price": 1599,
+    "originalPrice": 2499,
+    "image": "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Hoodies",
+    "isSale": true,
+    "inStock": true,
+    "sku": "HD-CL-01"
+  },
+  {
+    "id": "4",
+    "name": "Half Sleeve Shirts",
+    "slug": "half-sleeve-shirts",
+    "description": "Stylish half sleeve shirts for summer. Breathable fabric with modern design.",
+    "price": 1499,
+    "originalPrice": 2199,
+    "image": "https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "SHHS-02"
+  },
+  {
+    "id": "5",
+    "name": "Casual T-Shirts",
+    "slug": "casual-t-shirts",
+    "description": "Everyday casual t-shirts with comfortable fit. Perfect for daily wear.",
+    "price": 699,
+    "originalPrice": 1199,
+    "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "T-Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "TS-CS-03"
+  },
+  {
+    "id": "6",
+    "name": "Denim Pants",
+    "slug": "denim-pants",
+    "description": "Classic denim pants with modern fit. Durable and stylish.",
+    "price": 2499,
+    "originalPrice": 3999,
+    "image": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Pants",
+    "isSale": true,
+    "inStock": true,
+    "sku": "PT-DN-01"
+  },
+  {
+    "id": "7",
+    "name": "Graphic T-Shirts",
+    "slug": "graphic-t-shirts",
+    "description": "Trendy graphic t-shirts with unique designs. Express your style.",
+    "price": 799,
+    "originalPrice": 1399,
+    "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "T-Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "TS-GR-04"
+  },
+  {
+    "id": "8",
+    "name": "Premium Hoodies",
+    "slug": "premium-hoodies",
+    "description": "Premium quality hoodies with soft fleece interior. Ultimate comfort.",
+    "price": 2199,
+    "originalPrice": 3499,
+    "image": "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Hoodies",
+    "isSale": true,
+    "inStock": true,
+    "sku": "HD-PR-02"
+  },
+  {
+    "id": "9",
+    "name": "Formal Shirts",
+    "slug": "formal-shirts",
+    "description": "Elegant formal shirts for professional settings. Premium fabric and finish.",
+    "price": 2299,
+    "originalPrice": 3299,
+    "image": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "SH-FM-03"
+  },
+  {
+    "id": "10",
+    "name": "Polo T-Shirts",
+    "slug": "polo-t-shirts",
+    "description": "Classic polo t-shirts for smart casual look. Comfortable and stylish.",
+    "price": 1199,
+    "originalPrice": 1899,
+    "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "T-Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "TS-PL-05"
+  },
+  {
+    "id": "11",
+    "name": "Chino Pants",
+    "slug": "chino-pants",
+    "description": "Versatile chino pants for casual and semi-formal occasions.",
+    "price": 2099,
+    "originalPrice": 3199,
+    "image": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Pants",
+    "isSale": true,
+    "inStock": true,
+    "sku": "PT-CH-02"
+  },
+  {
+    "id": "12",
+    "name": "Zip Hoodies",
+    "slug": "zip-hoodies",
+    "description": "Convenient zip-up hoodies with modern design. Easy to wear.",
+    "price": 1799,
+    "originalPrice": 2899,
+    "image": "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Hoodies",
+    "isSale": true,
+    "inStock": true,
+    "sku": "HD-ZP-03"
+  },
+  {
+    "id": "13",
+    "name": "Linen Shirts",
+    "slug": "linen-shirts",
+    "description": "Breathable linen shirts perfect for summer. Light and airy.",
+    "price": 1899,
+    "originalPrice": 2699,
+    "image": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "SH-LN-04"
+  },
+  {
+    "id": "14",
+    "name": "V-Neck T-Shirts",
+    "slug": "v-neck-t-shirts",
+    "description": "Stylish v-neck t-shirts for a modern look. Comfortable fit.",
+    "price": 749,
+    "originalPrice": 1299,
+    "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "T-Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "TS-VN-06"
+  },
+  {
+    "id": "15",
+    "name": "Cargo Pants",
+    "slug": "cargo-pants",
+    "description": "Practical cargo pants with multiple pockets. Utility meets style.",
+    "price": 2299,
+    "originalPrice": 3499,
+    "image": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Pants",
+    "isSale": true,
+    "inStock": true,
+    "sku": "PT-CG-03"
+  },
+  {
+    "id": "16",
+    "name": "Striped Shirts",
+    "slug": "striped-shirts",
+    "description": "Classic striped shirts for versatile styling. Timeless design.",
+    "price": 1799,
+    "originalPrice": 2599,
+    "image": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "SH-ST-05"
+  },
+  {
+    "id": "17",
+    "name": "Henley T-Shirts",
+    "slug": "henley-t-shirts",
+    "description": "Casual henley t-shirts with button placket. Relaxed style.",
+    "price": 899,
+    "originalPrice": 1499,
+    "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "T-Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "TS-HN-07"
+  },
+  {
+    "id": "18",
+    "name": "Pullover Hoodies",
+    "slug": "pullover-hoodies",
+    "description": "Classic pullover hoodies with kangaroo pocket. Cozy and warm.",
+    "price": 1699,
+    "originalPrice": 2699,
+    "image": "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8148577/pexels-photo-8148577.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Hoodies",
+    "isSale": true,
+    "inStock": true,
+    "sku": "HD-PL-04"
+  },
+  {
+    "id": "19",
+    "name": "Oxford Shirts",
+    "slug": "oxford-shirts",
+    "description": "Premium oxford shirts with button-down collar. Smart casual.",
+    "price": 2199,
+    "originalPrice": 3299,
+    "image": "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "SH-OX-06"
+  },
+  {
+    "id": "20",
+    "name": "Ringer T-Shirts",
+    "slug": "ringer-t-shirts",
+    "description": "Retro ringer t-shirts with contrast trim. Vintage style.",
+    "price": 849,
+    "originalPrice": 1399,
+    "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "images": [
+      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "category": "T-Shirts",
+    "isSale": true,
+    "inStock": true,
+    "sku": "TS-RG-08"
+  }
+]
