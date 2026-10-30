@@ -28,7 +28,6 @@ export default function AdminUsers() {
   // User Statistics Modal
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [selectedUserStats, setSelectedUserStats] = useState<any>(null);
-  const [loadingStats, setLoadingStats] = useState(false);
 
   useEffect(() => {
     fetchUsers();
@@ -51,15 +50,12 @@ export default function AdminUsers() {
 
   const fetchUserStats = async (userId: string) => {
     try {
-      setLoadingStats(true);
       const stats = await api.getUserOrderStats(userId);
       setSelectedUserStats(stats);
       setShowStatsModal(true);
     } catch (error) {
       console.error('Failed to fetch user statistics:', error);
       alert('Failed to load user statistics');
-    } finally {
-      setLoadingStats(false);
     }
   };
 

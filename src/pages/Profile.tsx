@@ -459,8 +459,9 @@ export default function Profile() {
       return;
     }
 
-    if (passwordData.newPassword.length < 6) {
-      setMessage({ type: 'error', text: 'Password must be at least 6 characters' });
+    // Matches the backend's minimum, so the shopper sees the rule before submitting.
+    if (passwordData.newPassword.length < 8) {
+      setMessage({ type: 'error', text: 'Password must be at least 8 characters' });
       return;
     }
 

@@ -1,6 +1,8 @@
 // API service for backend communication
-const API_BASE_URL = 'https://looksmatter-bc.onrender.com/api';
-// const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+// Set VITE_API_BASE_URL (see .env.example) to use another backend; keep the /api suffix.
+const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL || 'https://looksmatter-bc.onrender.com/api';
+// The server that hosts /uploads, used to turn relative upload paths into full URLs.
+const API_ORIGIN = API_BASE_URL.replace(/\/api\/?$/, '');
 
 interface LoginCredentials {
   email: string;
@@ -11,12 +13,6 @@ interface RegisterData {
   name: string;
   email: string;
   password: string;
-}
-
-interface ApiResponse<T> {
-  data?: T;
-  message?: string;
-  error?: string;
 }
 
 /** Parsed error body, e.g. { message, code } from the backend. */
@@ -112,8 +108,9 @@ class ApiService {
     });
   }
 
+  // The backend changes the password on the profile route when both fields are sent.
   async changePassword(data: { currentPassword: string; newPassword: string }) {
-    return this.request<any>('/users/me/password', {
+    return this.request<any>('/users/me', {
       method: 'PUT',
       body: JSON.stringify(data),
     });
@@ -353,7 +350,7 @@ class ApiService {
 
   // Image Upload
   async uploadImage(formData: FormData) {
-    const response = await fetch(`${API_BASE_URL}/upload`, {
+    const response = await fetch(`${API_BASE_URL}/uploads`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${this.token}`,
@@ -365,7 +362,13 @@ class ApiService {
       throw new Error('Upload failed');
     }
 
-    return response.json();
+    // The server answers with a path such as "/uploads/x.jpg"; make it absolute so
+    // it still resolves when the storefront is served from a different origin.
+    const data = await response.json();
+    if (typeof data?.url === 'string' && data.url.startsWith('/')) {
+      data.url = `${API_ORIGIN}${data.url}`;
+    }
+    return data;
   }
 
   // Admin - User Order Statistics
