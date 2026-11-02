@@ -13,7 +13,7 @@ LOOKSMATTER is split across two repositories:
 | Repository | Role |
 | --- | --- |
 | **looksmatter_ui** (this repo) | Storefront, customer account, checkout, admin workspace |
-| [**looksmatter-backend**](https://github.com/abuiron/looksmatter_bc) | Express + MongoDB API: auth, carts, orders, payments, authorization |
+| [**looksmatter-backend**](https://github.com/abuiron/looksmatter_bc) | Express + MongoDB microservices behind an API gateway: auth, carts, orders, payments, authorization |
 
 The UI aims to feel instant (shared caching, optimistic updates, preserved browsing state) while the backend stays the source of truth for prices, orders, and permissions.
 
@@ -120,7 +120,7 @@ flowchart TD
         SS[(sessionStorage)]
     end
 
-    BE["looksmatter-backend<br/>Express + MongoDB"]
+    BE["looksmatter-backend<br/>API gateway → core + order services"]
     CDN[Cloudinary CDN]
 
     ROUTER --> Providers --> PAGES
